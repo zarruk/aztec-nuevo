@@ -195,42 +195,8 @@ export default function TalleresPage() {
 
   // Si después de cargar no hay talleres, usar datos de ejemplo
   if (talleres.length === 0 && !loading) {
-    console.log('Usando datos de ejemplo');
-    setTalleres([
-      {
-        id: 1,
-        nombre: 'Tracker de Gastos con Tarjeta (Ejemplo)',
-        descripcion: 'Sube un archivo escaneado e inmediatamente los movimientos quedan en un Google Sheets y recibe un WhatsApp con un resumen de los gastos.',
-        tipo: 'vivo',
-        fecha: '2024-02-03T18:00:00+00:00',
-        precio: 99000,
-        capacidad: 20,
-        video_url: 'https://www.youtube.com/watch?v=ejemplo1',
-        imagen_url: '/images/taller-tracker.jpg'
-      },
-      {
-        id: 2,
-        nombre: 'Automatización de Respuesta a Leads (Ejemplo)',
-        descripcion: 'Cuando tu cliente llene un formulario online, recibirá seguimiento inmediato por correo y sus datos quedarán registrados en un Sheets',
-        tipo: 'vivo',
-        fecha: '2024-02-10T18:00:00+00:00',
-        precio: 99000,
-        capacidad: 20,
-        video_url: 'https://www.youtube.com/watch?v=ejemplo2',
-        imagen_url: '/images/taller-leads.jpg'
-      },
-      {
-        id: 3,
-        nombre: 'Automatización de Posts en Redes Sociales (Ejemplo)',
-        descripcion: 'Programa tus posts en múltiples redes sociales automáticamente y recibe un resumen de tu actividad en WhatsApp',
-        tipo: 'pregrabado',
-        fecha: '2024-01-01T00:00:00+00:00',
-        precio: 99000,
-        capacidad: 50,
-        video_url: 'https://www.youtube.com/watch?v=ejemplo4',
-        imagen_url: '/images/taller-redes.jpg'
-      }
-    ]);
+    console.log('No hay talleres disponibles');
+    // No establecer talleres de ejemplo, simplemente mostrar un mensaje de que no hay talleres disponibles
   }
 
 // Función para determinar si un taller es pregrabado
